@@ -1,9 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-import webdriver_manager.chrome
+# import webdriver_manager
 from time import sleep
-import pytest
+from pytest import mark
 
 
 url="https://www.saucedemo.com/"
@@ -77,7 +77,3 @@ def test_URL_of_Homepage_positive():
 def test_URL_of_Homepage_negative():
     print(driver.current_url)
     assert driver.current_url == driver.title
-
-
-
-
